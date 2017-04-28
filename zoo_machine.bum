@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1493405912669" org.eventb.texttools.text_representation="machine zoo_machine sees zoo_context&#10;&#10;variables species cell_size location type&#10;&#10;invariants&#10;  @inv1 species⊆ANIMAL&#10;  @inv2 cell_size∈CELL→ℕ&#10;  @inv3 location∈ANIMAL→CELL&#10;  @inv4 type∈ANIMAL→ANIMAL_TYPE&#10;  @inv5 ∀ c · c ∈ CELL ⇒ cell_size(c) ≤ cell_capacity(c)&#10;&#10;events&#10;  event INITIALISATION&#10;    then&#10;      @act1 species ≔ ∅&#10;      @act2 cell_size ≔ CELL × {0}&#10;      @act3 location ≔  ∅&#10;      @act4 type ≔  ∅&#10;  end&#10;&#10;  event ADD_ANIMAL&#10;    any col t spec cell&#10;    where&#10;      @grd1 col ∈ COLORS&#10;      @grd2 t ∈ ANIMAL_TYPE&#10;      @grd3 spec ∈ ANIMAL ∖ species&#10;      @grd4 cell ∈ CELL&#10;      @grd5 cell_size(cell) ≤ cell_capacity(cell)&#10;      @grd6 color(t) = red ⇒ cell_size(cell) = 0&#10;      @grd7 color(t) = green ⇒ (∀spe·spe ∈ species ∧ location(spe) = cell ⇒&#10;            ((type(spe) = t ∧ color(type(spe)) ∈ {green, yellow}) ∨&#10;            (type(spe) ≠ t ∧ color(type(spe)) ∈ {green, blue})))&#10;      @grd8 color(t) = blue ⇒ (∀spe·spe ∈ species ∧ location(spe) = cell ⇒&#10;            ((type(spe) = t ∧ color(type(spe)) ∈ {green, yellow})))&#10;      @grd9 color(t) = yellow ⇒ (∀spe·spe ∈ species ∧ location(spe) = cell ⇒&#10;            ((type(spe) = t ∧ color(type(spe)) ∈ {green, blue})))&#10;    then&#10;      @act1 species ≔ species ∪ {spec}&#10;      @act2 type ≔ type ∪ {spec ↦ t}&#10;      @act3 location ≔ location ∪ {spec ↦ cell}&#10;      @act4 cell_size(cell) ≔ cell_size(cell) + 1&#10;  end&#10;&#10;  event RELEASE_ANIMAL&#10;    any spec&#10;    where&#10;      @grd1 spec ∈ species&#10;    then&#10;      @act1 cell_size(location(spec)) ≔ cell_size(location(spec)) − 1&#10;      @act2 location ≔ {spec} ⩤ location&#10;      @act3 type ≔ {spec} ⩤ type&#10;      @act4 species ≔ species ∖ {spec}&#10;  end&#10;&#10;  event TRANSFER_ANIMAL&#10;    any spec new_cell&#10;    where&#10;      @grd1 spec ∈ species&#10;      @grd2 new_cell ∈ CELL&#10;      @grd3 new_cell ≠ location(spec)&#10;      @grd4 cell_size(new_cell) &lt; cell_capacity(new_cell)&#10;      @grd5 ∀spe·spe ∈ species ∧ location(spe) = new_cell  ⇒ type(spe) = type(spec)&#10;    then&#10;      @act1 cell_size ≔ { c ↦ n ∣ c ∈ CELL ∧ n ∈ ℕ ∧ (c ≠ location(spec) ∧ c ≠ new_cell ⇒ c ↦ n∈cell_size)&#10;                   ∧ (c = location(spec) ⇒ n = cell_size(c) − 1)&#10;                   ∧ (c = new_cell ⇒ n = cell_size(c) + 1)}&#10;      @act2 location ≔ (location ∖ {spec ↦ location(spec)}) ∪ {spec ↦ new_cell}&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.seesContext name="_eQOAACw5EeeFnttsbmd41A" org.eventb.core.target="zoo_context"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_knsfcCw5EeeFnttsbmd41A" org.eventb.core.assignment="species ≔ ∅" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="_knsfcSw5EeeFnttsbmd41A" org.eventb.core.assignment="cell_size ≔ CELL × {0}" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="_knsfciw5EeeFnttsbmd41A" org.eventb.core.assignment="location ≔  ∅" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="_8b7wuyw5EeeFnttsbmd41A" org.eventb.core.assignment="type ≔  ∅" org.eventb.core.label="act4"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_a_sDYCw5EeeFnttsbmd41A" org.eventb.core.identifier="species"/>
+<org.eventb.core.variable name="_a_sDYSw5EeeFnttsbmd41A" org.eventb.core.identifier="cell_size"/>
+<org.eventb.core.variable name="_a_sDYiw5EeeFnttsbmd41A" org.eventb.core.identifier="location"/>
+<org.eventb.core.invariant name="_gsYgcCw5EeeFnttsbmd41A" org.eventb.core.label="inv1" org.eventb.core.predicate="species⊆ANIMAL"/>
+<org.eventb.core.invariant name="_gsYgcSw5EeeFnttsbmd41A" org.eventb.core.label="inv2" org.eventb.core.predicate="cell_size∈CELL→ℕ"/>
+<org.eventb.core.invariant name="_gsYgciw5EeeFnttsbmd41A" org.eventb.core.label="inv3" org.eventb.core.predicate="location∈ANIMAL→CELL"/>
+<org.eventb.core.event name="_8b7wsCw5EeeFnttsbmd41A" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ADD_ANIMAL">
+<org.eventb.core.parameter name="_8b7wsSw5EeeFnttsbmd41A" org.eventb.core.identifier="col"/>
+<org.eventb.core.parameter name="_8b7wsiw5EeeFnttsbmd41A" org.eventb.core.identifier="t"/>
+<org.eventb.core.parameter name="_8b7wsyw5EeeFnttsbmd41A" org.eventb.core.identifier="spec"/>
+<org.eventb.core.parameter name="__5vFkCw_EeeFnttsbmd41A" org.eventb.core.identifier="cell"/>
+<org.eventb.core.guard name="_8b7wtCw5EeeFnttsbmd41A" org.eventb.core.label="grd1" org.eventb.core.predicate="col ∈ COLORS"/>
+<org.eventb.core.guard name="_8b7wtSw5EeeFnttsbmd41A" org.eventb.core.label="grd2" org.eventb.core.predicate="t ∈ ANIMAL_TYPE"/>
+<org.eventb.core.guard name="_8b7wtiw5EeeFnttsbmd41A" org.eventb.core.label="grd3" org.eventb.core.predicate="spec ∈ ANIMAL ∖ species"/>
+<org.eventb.core.guard name="_8b7wtyw5EeeFnttsbmd41A" org.eventb.core.label="grd4" org.eventb.core.predicate="cell ∈ CELL"/>
+<org.eventb.core.guard name="_8b7wuCw5EeeFnttsbmd41A" org.eventb.core.label="grd5" org.eventb.core.predicate="cell_size(cell) ≤ cell_capacity(cell)"/>
+<org.eventb.core.guard name="_8b7wuSw5EeeFnttsbmd41A" org.eventb.core.label="grd6" org.eventb.core.predicate="color(t) = red ⇒ cell_size(cell) = 0"/>
+<org.eventb.core.guard name="_8b7wuiw5EeeFnttsbmd41A" org.eventb.core.label="grd7" org.eventb.core.predicate="color(t) = green ⇒ (∀spe·spe ∈ species ∧ location(spe) = cell ⇒&#10;            ((type(spe) = t ∧ color(type(spe)) ∈ {green, yellow}) ∨&#10;            (type(spe) ≠ t ∧ color(type(spe)) ∈ {green, blue})))"/>
+<org.eventb.core.guard name="_azV6YCxCEeeFnttsbmd41A" org.eventb.core.label="grd8" org.eventb.core.predicate="color(t) = blue ⇒ (∀spe·spe ∈ species ∧ location(spe) = cell ⇒&#10;            ((type(spe) = t ∧ color(type(spe)) ∈ {green, yellow})))"/>
+<org.eventb.core.guard name="_azV6YSxCEeeFnttsbmd41A" org.eventb.core.label="grd9" org.eventb.core.predicate="color(t) = yellow ⇒ (∀spe·spe ∈ species ∧ location(spe) = cell ⇒&#10;            ((type(spe) = t ∧ color(type(spe)) ∈ {green, blue})))"/>
+<org.eventb.core.action name="__5vsoSw_EeeFnttsbmd41A" org.eventb.core.assignment="species ≔ species ∪ {spec}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="_s7RwICxCEeeFnttsbmd41A" org.eventb.core.assignment="type ≔ type ∪ {spec ↦ t}" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="_72hncCxCEeeFnttsbmd41A" org.eventb.core.assignment="location ≔ location ∪ {spec ↦ cell}" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="_72hncSxCEeeFnttsbmd41A" org.eventb.core.assignment="cell_size(cell) ≔ cell_size(cell) + 1" org.eventb.core.label="act4"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_Qdc-QCw6EeeFnttsbmd41A" org.eventb.core.identifier="type"/>
+<org.eventb.core.invariant name="_Qdc-QSw6EeeFnttsbmd41A" org.eventb.core.label="inv4" org.eventb.core.predicate="type∈ANIMAL→ANIMAL_TYPE"/>
+<org.eventb.core.invariant name="__5vsoiw_EeeFnttsbmd41A" org.eventb.core.label="inv5" org.eventb.core.predicate="∀ c · c ∈ CELL ⇒ cell_size(c) ≤ cell_capacity(c)"/>
+<org.eventb.core.event name="_wqwdICxDEeeFnttsbmd41A" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="RELEASE_ANIMAL">
+<org.eventb.core.parameter name="_wqwdISxDEeeFnttsbmd41A" org.eventb.core.identifier="spec"/>
+<org.eventb.core.guard name="_wqwdJSxDEeeFnttsbmd41A" org.eventb.core.label="grd1" org.eventb.core.predicate="spec ∈ species"/>
+<org.eventb.core.action name="_wqwdLixDEeeFnttsbmd41A" org.eventb.core.assignment="cell_size(location(spec)) ≔ cell_size(location(spec)) − 1" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="_wqwdLyxDEeeFnttsbmd41A" org.eventb.core.assignment="location ≔ {spec} ⩤ location" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="_wqwdMCxDEeeFnttsbmd41A" org.eventb.core.assignment="type ≔ {spec} ⩤ type" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="_wqwdMSxDEeeFnttsbmd41A" org.eventb.core.assignment="species ≔ species ∖ {spec}" org.eventb.core.label="act4"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_SSSNYCxEEeeFnttsbmd41A" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="TRANSFER_ANIMAL">
+<org.eventb.core.parameter name="_SSSNYSxEEeeFnttsbmd41A" org.eventb.core.identifier="spec"/>
+<org.eventb.core.parameter name="_SSSNYixEEeeFnttsbmd41A" org.eventb.core.identifier="new_cell"/>
+<org.eventb.core.guard name="_SSSNYyxEEeeFnttsbmd41A" org.eventb.core.label="grd1" org.eventb.core.predicate="spec ∈ species"/>
+<org.eventb.core.guard name="_SSSNZCxEEeeFnttsbmd41A" org.eventb.core.label="grd2" org.eventb.core.predicate="new_cell ∈ CELL"/>
+<org.eventb.core.guard name="_SSS0cCxEEeeFnttsbmd41A" org.eventb.core.label="grd3" org.eventb.core.predicate="new_cell ≠ location(spec)"/>
+<org.eventb.core.guard name="_SSS0cSxEEeeFnttsbmd41A" org.eventb.core.label="grd4" org.eventb.core.predicate="cell_size(new_cell) &lt; cell_capacity(new_cell)"/>
+<org.eventb.core.guard name="_SSS0cixEEeeFnttsbmd41A" org.eventb.core.label="grd5" org.eventb.core.predicate="∀spe·spe ∈ species ∧ location(spe) = new_cell  ⇒ type(spe) = type(spec)"/>
+<org.eventb.core.action name="_SSS0cyxEEeeFnttsbmd41A" org.eventb.core.assignment="cell_size ≔ { c ↦ n ∣ c ∈ CELL ∧ n ∈ ℕ ∧ (c ≠ location(spec) ∧ c ≠ new_cell ⇒ c ↦ n∈cell_size)&#10;                   ∧ (c = location(spec) ⇒ n = cell_size(c) − 1)&#10;                   ∧ (c = new_cell ⇒ n = cell_size(c) + 1)}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="_SSS0dCxEEeeFnttsbmd41A" org.eventb.core.assignment="location ≔ (location ∖ {spec ↦ location(spec)}) ∪ {spec ↦ new_cell}" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>
