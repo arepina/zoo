@@ -43,16 +43,19 @@
 <org.eventb.core.action name="_wqwdMCxDEeeFnttsbmd41A" org.eventb.core.assignment="type ≔ {spec} ⩤ type" org.eventb.core.label="act3"/>
 <org.eventb.core.action name="_wqwdMSxDEeeFnttsbmd41A" org.eventb.core.assignment="species ≔ species ∖ {spec}" org.eventb.core.label="act4"/>
 </org.eventb.core.event>
-<org.eventb.core.event name="_SSSNYCxEEeeFnttsbmd41A" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TRANSFER_ANIMAL">
+<org.eventb.core.event name="_SSSNYCxEEeeFnttsbmd41A" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="TRANSFER_ANIMAL">
 <org.eventb.core.parameter name="_SSSNYSxEEeeFnttsbmd41A" org.eventb.core.identifier="spec"/>
 <org.eventb.core.parameter name="_SSSNYixEEeeFnttsbmd41A" org.eventb.core.identifier="new_cell"/>
 <org.eventb.core.guard name="_SSSNYyxEEeeFnttsbmd41A" org.eventb.core.label="grd1" org.eventb.core.predicate="spec ∈ species"/>
 <org.eventb.core.guard name="_SSSNZCxEEeeFnttsbmd41A" org.eventb.core.label="grd2" org.eventb.core.predicate="new_cell ∈ CELL"/>
 <org.eventb.core.guard name="_SSS0cCxEEeeFnttsbmd41A" org.eventb.core.label="grd3" org.eventb.core.predicate="new_cell ≠ location(spec)"/>
 <org.eventb.core.guard name="_SSS0cSxEEeeFnttsbmd41A" org.eventb.core.label="grd4" org.eventb.core.predicate="cell_size(new_cell) &lt; cell_capacity(new_cell)"/>
-<org.eventb.core.guard name="_SSS0cixEEeeFnttsbmd41A" org.eventb.core.label="grd5" org.eventb.core.predicate="∀spe·spe ∈ species ∧ location(spe) = new_cell  ⇒ type(spe) = type(spec)"/>
+<org.eventb.core.guard name="_SSS0cixEEeeFnttsbmd41A" org.eventb.core.label="grd5" org.eventb.core.predicate="color(type(spec)) = red ⇒ cell_size(new_cell) = 0"/>
 <org.eventb.core.action name="_SSS0cyxEEeeFnttsbmd41A" org.eventb.core.assignment="cell_size ≔ { c ↦ n ∣ c ∈ CELL ∧ n ∈ ℕ ∧ (c ≠ location(spec) ∧ c ≠ new_cell ⇒ c ↦ n∈cell_size)&#10;                   ∧ (c = location(spec) ⇒ n = cell_size(c) − 1)&#10;                   ∧ (c = new_cell ⇒ n = cell_size(c) + 1)}" org.eventb.core.label="act1"/>
 <org.eventb.core.action name="_SSS0dCxEEeeFnttsbmd41A" org.eventb.core.assignment="location ≔ (location ∖ {spec ↦ location(spec)}) ∪ {spec ↦ new_cell}" org.eventb.core.label="act2"/>
+<org.eventb.core.guard name="_SSSNZCxEEeeFnttsbmd41B" org.eventb.core.label="grd6" org.eventb.core.predicate="color(type(spec)) = green ⇒ (∀spe·spe ∈ species ∧ location(spe) = new_cell ⇒&#13;&#10;            ((type(spe) = type(spec) ∧ color(type(spe)) ∈ {green, yellow}) ∨&#13;&#10;            (type(spe) ≠ type(spec) ∧ color(type(spe)) ∈ {green, blue})))"/>
+<org.eventb.core.guard name="_SSSNZCxEEeeFnttsbmd41C" org.eventb.core.label="grd7" org.eventb.core.predicate="color(type(spec)) = blue ⇒ (∀spe·spe ∈ species ∧ location(spe) = new_cell ⇒&#13;&#10;            ((type(spe) ≠ type(spec) ∧ color(type(spe)) ∈ {green, blue})))"/>
+<org.eventb.core.guard name="_SSSNZCxEEeeFnttsbmd41D" org.eventb.core.label="grd8" org.eventb.core.predicate="color(type(spec)) = yellow ⇒ (∀spe·spe ∈ species ∧ location(spe) = new_cell ⇒&#13;&#10;            ((type(spe) = type(spec))))" org.eventb.core.theorem="true"/>
 </org.eventb.core.event>
 <org.eventb.core.invariant name="_wqwdICxDEeeFnttsbmd41B" org.eventb.core.label="inv6" org.eventb.core.predicate="some rule for animal_types communication"/>
 </org.eventb.core.machineFile>

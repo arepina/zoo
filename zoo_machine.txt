@@ -71,7 +71,14 @@
 		?	grd2:	new_cell ? CELL not theorem ›
 		?	grd3:	new_cell ? location(spec) not theorem ›
 		?	grd4:	cell_size(new_cell) < cell_capacity(new_cell) not theorem ›
-		?	grd5:	?spe·spe ? species ? location(spe) = new_cell  ? type(spe) = type(spec) not theorem ›
+		?	grd5:	color(type(spec)) = red ? cell_size(new_cell) = 0 not theorem ›
+		?	grd6:	color(type(spec)) = green ? (?spe·spe ? species ? location(spe) = new_cell ?
+		 	     	            ((type(spe) = type(spec) ? color(type(spe)) ? {green, yellow}) ?
+		 	     	            (type(spe) ? type(spec) ? color(type(spe)) ? {green, blue}))) not theorem ›
+		?	grd7:	color(type(spec)) = blue ? (?spe·spe ? species ? location(spe) = new_cell ?
+		 	     	            ((type(spe) ? type(spec) ? color(type(spe)) ? {green, blue}))) not theorem ›
+		?	grd8:	color(type(spec)) = yellow ? (?spe·spe ? species ? location(spe) = new_cell ?
+		 	     	            ((type(spe) = type(spec)))) theorem ›
 		THEN
 		?	act1:	cell_size ? { c ? n ? c ? CELL ? n ? ? ? (c ? location(spec) ? c ? new_cell ? c ? n?cell_size)
 		 	     	                   ? (c = location(spec) ? n = cell_size(c) ? 1)
