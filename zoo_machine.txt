@@ -13,7 +13,13 @@
 	?	inv3:	location?ANIMAL>CELL not theorem ›
 	?	inv4:	type?ANIMAL>ANIMAL_TYPE not theorem ›
 	?	inv5:	? c · c ? CELL ? cell_size(c) ? cell_capacity(c) not theorem ›
-	?	inv6:	some rule for animal_types communication not theorem ›
+	?	inv6:	? s·(s?species ? color(type(s))=red)?cell_size(location(s))=0 not theorem ›
+	?	inv7:	? s1,s2·(s1?species?s2?species?location(s1)=location(s2)
+	 	     	?color(type(s1))=yellow)?color(type(s2))=yellow ? type(s1)=type(s2) not theorem ›
+	?	inv8:	? s1,s2·(s1?species?s2?species?location(s1)=location(s2)
+	 	     	?color(type(s1))=blue)?color(type(s2))=blue ? type(s1)?type(s2) not theorem ›
+	?	inv9:	? s1,s2·(s1?species?s2?species?location(s1)=location(s2)
+	 	     	?color(type(s1))=green)?color(type(s2))?{green,blue} not theorem ›
 	EVENTS
 	?	INITIALISATION:	 not extended ordinary ›
 		THEN

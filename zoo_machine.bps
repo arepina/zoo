@@ -1,35 +1,55 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.psFile>
-<org.eventb.core.psStatus name="inv5/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="31" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="31" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="31" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="31" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="31" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="ADD_ANIMAL/grd5/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="31" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="ADD_ANIMAL/grd6/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="31" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="ADD_ANIMAL/grd7/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="31" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="ADD_ANIMAL/grd8/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="32" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="ADD_ANIMAL/grd9/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="32" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="ADD_ANIMAL/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="32" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="ADD_ANIMAL/inv3/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="32" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="ADD_ANIMAL/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="32" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="ADD_ANIMAL/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="32" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="ADD_ANIMAL/act4/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="32" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="RELEASE_ANIMAL/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="31" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="RELEASE_ANIMAL/inv3/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="31" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="RELEASE_ANIMAL/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="31" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="RELEASE_ANIMAL/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="31" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="RELEASE_ANIMAL/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="31" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="TRANSFER_ANIMAL/grd3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="34" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="TRANSFER_ANIMAL/grd4/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="34" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="TRANSFER_ANIMAL/grd5/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="36" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="TRANSFER_ANIMAL/grd6/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="36" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="TRANSFER_ANIMAL/grd7/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="37" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="TRANSFER_ANIMAL/grd8/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="37" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="TRANSFER_ANIMAL/grd8/THM" org.eventb.core.confidence="0" org.eventb.core.poStamp="37" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="TRANSFER_ANIMAL/inv2/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="37" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="TRANSFER_ANIMAL/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="37" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="TRANSFER_ANIMAL/inv5/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="37" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="TRANSFER_ANIMAL/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="37" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="TRANSFER_ANIMAL/act2/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="37" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="inv5/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="38" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="inv6/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="38" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="inv7/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="39" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="inv8/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="40" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="inv9/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="39" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="39" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="39" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="39" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="39" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="40" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="ADD_ANIMAL/grd5/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="ADD_ANIMAL/grd6/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="ADD_ANIMAL/grd7/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="ADD_ANIMAL/grd8/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="ADD_ANIMAL/grd9/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="ADD_ANIMAL/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="ADD_ANIMAL/inv3/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="ADD_ANIMAL/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="ADD_ANIMAL/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="ADD_ANIMAL/inv6/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="ADD_ANIMAL/inv7/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="ADD_ANIMAL/inv8/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="ADD_ANIMAL/inv9/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="ADD_ANIMAL/act4/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="RELEASE_ANIMAL/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="RELEASE_ANIMAL/inv3/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="RELEASE_ANIMAL/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="RELEASE_ANIMAL/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="RELEASE_ANIMAL/inv6/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="RELEASE_ANIMAL/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="RELEASE_ANIMAL/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="RELEASE_ANIMAL/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="RELEASE_ANIMAL/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="TRANSFER_ANIMAL/grd3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="TRANSFER_ANIMAL/grd4/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="TRANSFER_ANIMAL/grd5/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="TRANSFER_ANIMAL/grd6/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="TRANSFER_ANIMAL/grd7/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="TRANSFER_ANIMAL/grd8/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="TRANSFER_ANIMAL/grd8/THM" org.eventb.core.confidence="0" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="TRANSFER_ANIMAL/inv2/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="TRANSFER_ANIMAL/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="TRANSFER_ANIMAL/inv5/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="TRANSFER_ANIMAL/inv6/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="TRANSFER_ANIMAL/inv7/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="TRANSFER_ANIMAL/inv8/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="TRANSFER_ANIMAL/inv9/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="TRANSFER_ANIMAL/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="TRANSFER_ANIMAL/act2/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
 </org.eventb.core.psFile>

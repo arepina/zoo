@@ -57,5 +57,8 @@
 <org.eventb.core.guard name="_SSSNZCxEEeeFnttsbmd41C" org.eventb.core.label="grd7" org.eventb.core.predicate="color(type(spec)) = blue ⇒ (∀spe·spe ∈ species ∧ location(spe) = new_cell ⇒&#13;&#10;            ((type(spe) ≠ type(spec) ∧ color(type(spe)) ∈ {green, blue})))"/>
 <org.eventb.core.guard name="_SSSNZCxEEeeFnttsbmd41D" org.eventb.core.label="grd8" org.eventb.core.predicate="color(type(spec)) = yellow ⇒ (∀spe·spe ∈ species ∧ location(spe) = new_cell ⇒&#13;&#10;            ((type(spe) = type(spec))))" org.eventb.core.theorem="true"/>
 </org.eventb.core.event>
-<org.eventb.core.invariant name="_wqwdICxDEeeFnttsbmd41B" org.eventb.core.label="inv6" org.eventb.core.predicate="some rule for animal_types communication"/>
+<org.eventb.core.invariant name="_wqwdICxDEeeFnttsbmd41B" org.eventb.core.label="inv6" org.eventb.core.predicate="∀ s·(s∈species ∧ color(type(s))=red)⇒cell_size(location(s))=0"/>
+<org.eventb.core.invariant name="_wqwdICxDEeeFnttsbmd41C" org.eventb.core.label="inv7" org.eventb.core.predicate="∀ s1,s2·(s1∈species∧s2∈species∧location(s1)=location(s2)&#13;&#10;∧color(type(s1))=yellow)⇒color(type(s2))=yellow ∧ type(s1)=type(s2)"/>
+<org.eventb.core.invariant name="_wqwdICxDEeeFnttsbmd41D" org.eventb.core.label="inv8" org.eventb.core.predicate="∀ s1,s2·(s1∈species∧s2∈species∧location(s1)=location(s2)&#13;&#10;∧color(type(s1))=blue)⇒color(type(s2))=blue ∧ type(s1)≠type(s2)"/>
+<org.eventb.core.invariant name="_wqwdICxDEeeFnttsbmd41E" org.eventb.core.label="inv9" org.eventb.core.predicate="∀ s1,s2·(s1∈species∧s2∈species∧location(s1)=location(s2)&#13;&#10;∧color(type(s1))=green)⇒color(type(s2))∈{green,blue}"/>
 </org.eventb.core.machineFile>
