@@ -1,0 +1,41 @@
+color(t) = red ⇒ cell_size(cell) = 0
+
+color(t) = green ⇒ 
+(
+	∀spe·spe ∈ species ∧ location(spe) = cell ⇒
+	(
+		(
+			type(spe) = t 
+			∧ 
+			color(type(spe)) ∈ {green, yellow}
+		) 
+		∨
+		(
+			type(spe) ≠ t 
+			∧ 
+			color(type(spe)) ∈ {green, blue}
+		)
+	)
+)
+
+color(t) = blue ⇒ 
+(
+	∀spe·spe ∈ species ∧ location(spe) = cell ⇒
+    (
+		(
+			type(spe) ≠ t 
+			∧ 
+			color(type(spe)) ∈ {green, blue}
+		)
+	)
+)
+
+color(t) = yellow ⇒ 
+(
+	∀spe·spe ∈ species ∧ location(spe) = cell ⇒
+	(
+		(
+			type(spe) = t 
+		)
+	)
+)

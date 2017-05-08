@@ -18,4 +18,5 @@
 	?	axm5:	finite(CELL) not theorem ›
 	?	axm2:	cell_capacity ? CELL > ?1 not theorem ›
 	?	axm3:	color ? ANIMAL_TYPE > COLORS not theorem ›
+	?	axm6:	finite(ANIMAL) not theorem ›
 	END

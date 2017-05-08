@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="4">
+<org.eventb.core.poFile org.eventb.core.poStamp="6">
 <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="4">
 <org.eventb.core.poIdentifier name="ANIMAL" org.eventb.core.type="ℙ(ANIMAL)"/>
 <org.eventb.core.poIdentifier name="ANIMAL_TYPE" org.eventb.core.type="ℙ(ANIMAL_TYPE)"/>
@@ -12,11 +12,12 @@
 <org.eventb.core.poIdentifier name="red" org.eventb.core.type="COLORS"/>
 <org.eventb.core.poIdentifier name="yellow" org.eventb.core.type="COLORS"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Zoo_new/zoo_context.bpo|org.eventb.core.poFile#zoo_context|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="4">
-<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(COLORS,{red},{yellow},{blue},{green})" org.eventb.core.source="/Zoo_new/zoo_context.buc|org.eventb.core.contextFile#zoo_context|org.eventb.core.axiom#_StPFCSw5EeeFnttsbmd41A"/>
-<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="finite(ANIMAL_TYPE)" org.eventb.core.source="/Zoo_new/zoo_context.buc|org.eventb.core.contextFile#zoo_context|org.eventb.core.axiom#_StPFCiw5EeeFnttsbmd41A"/>
-<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="finite(CELL)" org.eventb.core.source="/Zoo_new/zoo_context.buc|org.eventb.core.contextFile#zoo_context|org.eventb.core.axiom#_StPFCyw5EeeFnttsbmd41A"/>
-<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="cell_capacity∈CELL → ℕ1" org.eventb.core.source="/Zoo_new/zoo_context.buc|org.eventb.core.contextFile#zoo_context|org.eventb.core.axiom#_StPFDCw5EeeFnttsbmd41A"/>
-<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="color∈ANIMAL_TYPE → COLORS" org.eventb.core.source="/Zoo_new/zoo_context.buc|org.eventb.core.contextFile#zoo_context|org.eventb.core.axiom#_VUH1cCw-EeeFnttsbmd41A"/>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/zoo/zoo_context.bpo|org.eventb.core.poFile#zoo_context|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="6">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(COLORS,{red},{yellow},{blue},{green})" org.eventb.core.source="/zoo/zoo_context.buc|org.eventb.core.contextFile#zoo_context|org.eventb.core.axiom#_StPFCSw5EeeFnttsbmd41A"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="finite(ANIMAL_TYPE)" org.eventb.core.source="/zoo/zoo_context.buc|org.eventb.core.contextFile#zoo_context|org.eventb.core.axiom#_StPFCiw5EeeFnttsbmd41A"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="finite(CELL)" org.eventb.core.source="/zoo/zoo_context.buc|org.eventb.core.contextFile#zoo_context|org.eventb.core.axiom#_StPFCyw5EeeFnttsbmd41A"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="cell_capacity∈CELL → ℕ1" org.eventb.core.source="/zoo/zoo_context.buc|org.eventb.core.contextFile#zoo_context|org.eventb.core.axiom#_StPFDCw5EeeFnttsbmd41A"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="color∈ANIMAL_TYPE → COLORS" org.eventb.core.source="/zoo/zoo_context.buc|org.eventb.core.contextFile#zoo_context|org.eventb.core.axiom#_VUH1cCw-EeeFnttsbmd41A"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="finite(ANIMAL)" org.eventb.core.source="/zoo/zoo_context.buc|org.eventb.core.contextFile#zoo_context|org.eventb.core.axiom#_VUH1cCw-EeeFnttsbmd41B"/>
 </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>
