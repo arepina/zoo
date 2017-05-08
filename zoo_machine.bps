@@ -41,8 +41,7 @@
 <org.eventb.core.psStatus name="TRANSFER_ANIMAL/grd5/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
 <org.eventb.core.psStatus name="TRANSFER_ANIMAL/grd6/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
 <org.eventb.core.psStatus name="TRANSFER_ANIMAL/grd7/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="TRANSFER_ANIMAL/grd8/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="TRANSFER_ANIMAL/grd8/THM" org.eventb.core.confidence="0" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="TRANSFER_ANIMAL/grd8/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="42" org.eventb.core.psManual="false"/>
 <org.eventb.core.psStatus name="TRANSFER_ANIMAL/inv2/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
 <org.eventb.core.psStatus name="TRANSFER_ANIMAL/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
 <org.eventb.core.psStatus name="TRANSFER_ANIMAL/inv5/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>

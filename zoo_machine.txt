@@ -84,7 +84,7 @@
 		?	grd7:	color(type(spec)) = blue ? (?spe·spe ? species ? location(spe) = new_cell ?
 		 	     	            ((type(spe) ? type(spec) ? color(type(spe)) ? {green, blue}))) not theorem ›
 		?	grd8:	color(type(spec)) = yellow ? (?spe·spe ? species ? location(spe) = new_cell ?
-		 	     	            ((type(spe) = type(spec)))) theorem ›
+		 	     	            ((type(spe) = type(spec)))) not theorem ›
 		THEN
 		?	act1:	cell_size ? { c ? n ? c ? CELL ? n ? ? ? (c ? location(spec) ? c ? new_cell ? c ? n?cell_size)
 		 	     	                   ? (c = location(spec) ? n = cell_size(c) ? 1)
