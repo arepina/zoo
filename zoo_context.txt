@@ -1,0 +1,21 @@
+	CONTEXT
+		zoo_context 	›
+	SETS
+	?	CELL	 ›
+	?	COLORS	 ›
+	?	ANIMAL_TYPE	 ›
+	?	ANIMAL	 ›
+	CONSTANTS
+	?	cell_capacity	 ›
+	?	color	 ›
+	?	red	 ›
+	?	yellow	 ›
+	?	green	 ›
+	?	blue	 ›
+	AXIOMS
+	?	axm1:	partition(COLORS, {red}, {yellow}, {blue}, {green}) not theorem ›
+	?	axm4:	finite(ANIMAL_TYPE) not theorem ›
+	?	axm5:	finite(CELL) not theorem ›
+	?	axm2:	cell_capacity ? CELL > ?1 not theorem ›
+	?	axm3:	color ? ANIMAL_TYPE > COLORS not theorem ›
+	END

@@ -1,0 +1,81 @@
+	MACHINE
+		zoo_machine 	›
+	SEES
+	?	 zoo_context 
+	VARIABLES
+	?	species	 ›
+	?	cell_size	 ›
+	?	location	 ›
+	?	type	 ›
+	INVARIANTS
+	?	inv1:	species?ANIMAL not theorem ›
+	?	inv2:	cell_size?CELL>? not theorem ›
+	?	inv3:	location?ANIMAL>CELL not theorem ›
+	?	inv4:	type?ANIMAL>ANIMAL_TYPE not theorem ›
+	?	inv5:	? c · c ? CELL ? cell_size(c) ? cell_capacity(c) not theorem ›
+	EVENTS
+	?	INITIALISATION:	 not extended ordinary ›
+		THEN
+		?	act1:	species ? ? ›
+		?	act2:	cell_size ? CELL ? {0} ›
+		?	act3:	location ?  ? ›
+		?	act4:	type ?  ? ›
+		END
+
+	?	ADD_ANIMAL:	 not extended ordinary ›
+		ANY
+		?	col	 ›
+		?	t	 ›
+		?	spec	 ›
+		?	cell	 ›
+		WHERE
+		?	grd1:	col ? COLORS not theorem ›
+		?	grd2:	t ? ANIMAL_TYPE not theorem ›
+		?	grd3:	spec ? ANIMAL ? species not theorem ›
+		?	grd4:	cell ? CELL not theorem ›
+		?	grd5:	cell_size(cell) ? cell_capacity(cell) not theorem ›
+		?	grd6:	color(t) = red ? cell_size(cell) = 0 not theorem ›
+		?	grd7:	color(t) = green ? (?spe·spe ? species ? location(spe) = cell ?
+		 	     	            ((type(spe) = t ? color(type(spe)) ? {green, yellow}) ?
+		 	     	            (type(spe) ? t ? color(type(spe)) ? {green, blue}))) not theorem ›
+		?	grd8:	color(t) = blue ? (?spe·spe ? species ? location(spe) = cell ?
+		 	     	            ((type(spe) = t ? color(type(spe)) ? {green, yellow}))) not theorem ›
+		?	grd9:	color(t) = yellow ? (?spe·spe ? species ? location(spe) = cell ?
+		 	     	            ((type(spe) = t ? color(type(spe)) ? {green, blue}))) not theorem ›
+		THEN
+		?	act1:	species ? species ? {spec} ›
+		?	act2:	type ? type ? {spec ? t} ›
+		?	act3:	location ? location ? {spec ? cell} ›
+		?	act4:	cell_size(cell) ? cell_size(cell) + 1 ›
+		END
+
+	?	RELEASE_ANIMAL:	 not extended ordinary ›
+		ANY
+		?	spec	 ›
+		WHERE
+		?	grd1:	spec ? species not theorem ›
+		THEN
+		?	act1:	cell_size(location(spec)) ? cell_size(location(spec)) ? 1 ›
+		?	act2:	location ? {spec} ? location ›
+		?	act3:	type ? {spec} ? type ›
+		?	act4:	species ? species ? {spec} ›
+		END
+
+	?	TRANSFER_ANIMAL:	 not extended ordinary ›
+		ANY
+		?	spec	 ›
+		?	new_cell	 ›
+		WHERE
+		?	grd1:	spec ? species not theorem ›
+		?	grd2:	new_cell ? CELL not theorem ›
+		?	grd3:	new_cell ? location(spec) not theorem ›
+		?	grd4:	cell_size(new_cell) < cell_capacity(new_cell) not theorem ›
+		?	grd5:	?spe·spe ? species ? location(spe) = new_cell  ? type(spe) = type(spec) not theorem ›
+		THEN
+		?	act1:	cell_size ? { c ? n ? c ? CELL ? n ? ? ? (c ? location(spec) ? c ? new_cell ? c ? n?cell_size)
+		 	     	                   ? (c = location(spec) ? n = cell_size(c) ? 1)
+		 	     	                   ? (c = new_cell ? n = cell_size(c) + 1)} ›
+		?	act2:	location ? (location ? {spec ? location(spec)}) ? {spec ? new_cell} ›
+		END
+
+	END
