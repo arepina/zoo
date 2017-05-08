@@ -18,7 +18,7 @@
 <org.eventb.core.parameter name="_8b7wsiw5EeeFnttsbmd41A" org.eventb.core.identifier="t"/>
 <org.eventb.core.parameter name="_8b7wsyw5EeeFnttsbmd41A" org.eventb.core.identifier="spec"/>
 <org.eventb.core.parameter name="__5vFkCw_EeeFnttsbmd41A" org.eventb.core.identifier="cell"/>
-<org.eventb.core.guard name="_8b7wtCw5EeeFnttsbmd41A" org.eventb.core.label="grd1" org.eventb.core.predicate="col ∈ COLORS" org.eventb.core.theorem="true"/>
+<org.eventb.core.guard name="_8b7wtCw5EeeFnttsbmd41A" org.eventb.core.label="grd1" org.eventb.core.predicate="col ∈ COLORS"/>
 <org.eventb.core.guard name="_8b7wtSw5EeeFnttsbmd41A" org.eventb.core.label="grd2" org.eventb.core.predicate="t ∈ ANIMAL_TYPE"/>
 <org.eventb.core.guard name="_8b7wtiw5EeeFnttsbmd41A" org.eventb.core.label="grd3" org.eventb.core.predicate="spec ∈ ANIMAL ∖ species"/>
 <org.eventb.core.guard name="_8b7wtyw5EeeFnttsbmd41A" org.eventb.core.label="grd4" org.eventb.core.predicate="cell ∈ CELL"/>
@@ -43,7 +43,7 @@
 <org.eventb.core.action name="_wqwdMCxDEeeFnttsbmd41A" org.eventb.core.assignment="type ≔ {spec} ⩤ type" org.eventb.core.label="act3"/>
 <org.eventb.core.action name="_wqwdMSxDEeeFnttsbmd41A" org.eventb.core.assignment="species ≔ species ∖ {spec}" org.eventb.core.label="act4"/>
 </org.eventb.core.event>
-<org.eventb.core.event name="_SSSNYCxEEeeFnttsbmd41A" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="TRANSFER_ANIMAL">
+<org.eventb.core.event name="_SSSNYCxEEeeFnttsbmd41A" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="TRANSFER_ANIMAL">
 <org.eventb.core.parameter name="_SSSNYSxEEeeFnttsbmd41A" org.eventb.core.identifier="spec"/>
 <org.eventb.core.parameter name="_SSSNYixEEeeFnttsbmd41A" org.eventb.core.identifier="new_cell"/>
 <org.eventb.core.guard name="_SSSNYyxEEeeFnttsbmd41A" org.eventb.core.label="grd1" org.eventb.core.predicate="spec ∈ species"/>

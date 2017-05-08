@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="32">
+<org.eventb.core.poFile org.eventb.core.poStamp="33">
 <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="30">
 <org.eventb.core.poIdentifier name="ANIMAL" org.eventb.core.type="ℙ(ANIMAL)"/>
 <org.eventb.core.poIdentifier name="ANIMAL_TYPE" org.eventb.core.type="ℙ(ANIMAL_TYPE)"/>
@@ -215,79 +215,6 @@
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poPredicateSet name="EVTALLHYPzoo_contex|" org.eventb.core.parentSet="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#EVTIDENTzoo_contex\|" org.eventb.core.poStamp="30">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="spec∈species" org.eventb.core.source="/zoo/zoo_machine.bum|org.eventb.core.machineFile#zoo_machine|org.eventb.core.event#_wqwdICxDEeeFnttsbmd41A|org.eventb.core.guard#_wqwdJSxDEeeFnttsbmd41A"/>
-</org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="TRANSFER_ANIMAL/grd3/WD" org.eventb.core.accurate="false" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="31">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#EVTHYPzoo_contex}("/>
-<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="spec∈dom(location)∧location∈ANIMAL ⇸ CELL" org.eventb.core.source="/zoo/zoo_machine.bum|org.eventb.core.machineFile#zoo_machine|org.eventb.core.event#_SSSNYCxEEeeFnttsbmd41A|org.eventb.core.guard#_SSS0cCxEEeeFnttsbmd41A"/>
-<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/zoo/zoo_machine.bum|org.eventb.core.machineFile#zoo_machine|org.eventb.core.event#_SSSNYCxEEeeFnttsbmd41A|org.eventb.core.guard#_SSS0cCxEEeeFnttsbmd41A"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#EVTHYPzoo_contex}("/>
-</org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="TRANSFER_ANIMAL/grd4/WD" org.eventb.core.accurate="false" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="31">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#EVTHYPzoo_contex})"/>
-<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="new_cell∈dom(cell_size)∧cell_size∈CELL ⇸ ℤ∧new_cell∈dom(cell_capacity)∧cell_capacity∈CELL ⇸ ℤ" org.eventb.core.source="/zoo/zoo_machine.bum|org.eventb.core.machineFile#zoo_machine|org.eventb.core.event#_SSSNYCxEEeeFnttsbmd41A|org.eventb.core.guard#_SSS0cSxEEeeFnttsbmd41A"/>
-<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/zoo/zoo_machine.bum|org.eventb.core.machineFile#zoo_machine|org.eventb.core.event#_SSSNYCxEEeeFnttsbmd41A|org.eventb.core.guard#_SSS0cSxEEeeFnttsbmd41A"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#EVTHYPzoo_contex})"/>
-</org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="TRANSFER_ANIMAL/grd5/WD" org.eventb.core.accurate="false" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="31">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#EVTHYPzoo_contex}*"/>
-<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀spe⦂ANIMAL·(spe∈species⇒spe∈dom(location)∧location∈ANIMAL ⇸ CELL)∧(spe∈species∧location(spe)=new_cell⇒spe∈dom(type)∧type∈ANIMAL ⇸ ANIMAL_TYPE∧spec∈dom(type))" org.eventb.core.source="/zoo/zoo_machine.bum|org.eventb.core.machineFile#zoo_machine|org.eventb.core.event#_SSSNYCxEEeeFnttsbmd41A|org.eventb.core.guard#_SSS0cixEEeeFnttsbmd41A"/>
-<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/zoo/zoo_machine.bum|org.eventb.core.machineFile#zoo_machine|org.eventb.core.event#_SSSNYCxEEeeFnttsbmd41A|org.eventb.core.guard#_SSS0cixEEeeFnttsbmd41A"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#EVTHYPzoo_contex}*"/>
-</org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="TRANSFER_ANIMAL/inv2/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="31">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#EVTALLHYPzoo_contex}"/>
-<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{c⦂CELL,n⦂ℤ·c∈CELL∧n∈ℕ∧(c≠location(spec)∧c≠new_cell⇒c ↦ n∈cell_size)∧(c=location(spec)⇒n=cell_size(c) − 1)∧(c=new_cell⇒n=cell_size(c)+1) ∣ c ↦ n}∈CELL → ℕ" org.eventb.core.source="/zoo/zoo_machine.bum|org.eventb.core.machineFile#zoo_machine|org.eventb.core.invariant#_gsYgcSw5EeeFnttsbmd41A"/>
-<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/zoo/zoo_machine.bum|org.eventb.core.machineFile#zoo_machine|org.eventb.core.event#_SSSNYCxEEeeFnttsbmd41A"/>
-<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/zoo/zoo_machine.bum|org.eventb.core.machineFile#zoo_machine|org.eventb.core.invariant#_gsYgcSw5EeeFnttsbmd41A"/>
-<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poSequent#TRANSFER_ANIMAL\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#HYPzoo_contexx|org.eventb.core.poPredicate#PRD1"/>
-</org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="TRANSFER_ANIMAL/inv3/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="31">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#EVTALLHYPzoo_contex}"/>
-<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(location ∖ {spec ↦ location(spec)})∪{spec ↦ new_cell}∈ANIMAL → CELL" org.eventb.core.source="/zoo/zoo_machine.bum|org.eventb.core.machineFile#zoo_machine|org.eventb.core.invariant#_gsYgciw5EeeFnttsbmd41A"/>
-<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/zoo/zoo_machine.bum|org.eventb.core.machineFile#zoo_machine|org.eventb.core.event#_SSSNYCxEEeeFnttsbmd41A"/>
-<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/zoo/zoo_machine.bum|org.eventb.core.machineFile#zoo_machine|org.eventb.core.invariant#_gsYgciw5EeeFnttsbmd41A"/>
-<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poSequent#TRANSFER_ANIMAL\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#HYPzoo_contexx|org.eventb.core.poPredicate#PRD2"/>
-</org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="TRANSFER_ANIMAL/inv5/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="31">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#EVTALLHYPzoo_contex}"/>
-<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀c⦂CELL·c∈CELL⇒{c⦂CELL,n⦂ℤ·c∈CELL∧n∈ℕ∧(c≠location(spec)∧c≠new_cell⇒c ↦ n∈cell_size)∧(c=location(spec)⇒n=cell_size(c) − 1)∧(c=new_cell⇒n=cell_size(c)+1) ∣ c ↦ n}(c)≤cell_capacity(c)" org.eventb.core.source="/zoo/zoo_machine.bum|org.eventb.core.machineFile#zoo_machine|org.eventb.core.invariant#__5vsoiw_EeeFnttsbmd41A"/>
-<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/zoo/zoo_machine.bum|org.eventb.core.machineFile#zoo_machine|org.eventb.core.event#_SSSNYCxEEeeFnttsbmd41A"/>
-<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/zoo/zoo_machine.bum|org.eventb.core.machineFile#zoo_machine|org.eventb.core.invariant#__5vsoiw_EeeFnttsbmd41A"/>
-<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poSequent#TRANSFER_ANIMAL\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
-</org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="TRANSFER_ANIMAL/act1/WD" org.eventb.core.accurate="false" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="31">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#EVTALLHYPzoo_contex}"/>
-<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀c⦂CELL,n⦂ℤ·c∈CELL∧n∈ℕ⇒spec∈dom(location)∧location∈ANIMAL ⇸ CELL∧((c≠location(spec)∧c≠new_cell⇒c ↦ n∈cell_size)⇒(c=location(spec)⇒c∈dom(cell_size)∧cell_size∈CELL ⇸ ℤ)∧((c=location(spec)⇒n=cell_size(c) − 1)∧c=new_cell⇒c∈dom(cell_size)∧cell_size∈CELL ⇸ ℤ))" org.eventb.core.source="/zoo/zoo_machine.bum|org.eventb.core.machineFile#zoo_machine|org.eventb.core.event#_SSSNYCxEEeeFnttsbmd41A|org.eventb.core.action#_SSS0cyxEEeeFnttsbmd41A"/>
-<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/zoo/zoo_machine.bum|org.eventb.core.machineFile#zoo_machine|org.eventb.core.event#_SSSNYCxEEeeFnttsbmd41A|org.eventb.core.action#_SSS0cyxEEeeFnttsbmd41A"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#EVTALLHYPzoo_contex}"/>
-</org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="TRANSFER_ANIMAL/act2/WD" org.eventb.core.accurate="false" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="31">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#EVTALLHYPzoo_contex}"/>
-<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="spec∈dom(location)∧location∈ANIMAL ⇸ CELL" org.eventb.core.source="/zoo/zoo_machine.bum|org.eventb.core.machineFile#zoo_machine|org.eventb.core.event#_SSSNYCxEEeeFnttsbmd41A|org.eventb.core.action#_SSS0dCxEEeeFnttsbmd41A"/>
-<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/zoo/zoo_machine.bum|org.eventb.core.machineFile#zoo_machine|org.eventb.core.event#_SSSNYCxEEeeFnttsbmd41A|org.eventb.core.action#_SSS0dCxEEeeFnttsbmd41A"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#EVTALLHYPzoo_contex}"/>
-</org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="EVTIDENTzoo_contex}" org.eventb.core.parentSet="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="30">
-<org.eventb.core.poIdentifier name="cell_size'" org.eventb.core.type="ℙ(CELL×ℤ)"/>
-<org.eventb.core.poIdentifier name="location'" org.eventb.core.type="ℙ(ANIMAL×CELL)"/>
-<org.eventb.core.poIdentifier name="new_cell" org.eventb.core.type="CELL"/>
-<org.eventb.core.poIdentifier name="spec" org.eventb.core.type="ANIMAL"/>
-</org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTHYPzoo_contex}(" org.eventb.core.parentSet="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#EVTIDENTzoo_contex}" org.eventb.core.poStamp="30">
-<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="spec∈species" org.eventb.core.source="/zoo/zoo_machine.bum|org.eventb.core.machineFile#zoo_machine|org.eventb.core.event#_SSSNYCxEEeeFnttsbmd41A|org.eventb.core.guard#_SSSNYyxEEeeFnttsbmd41A"/>
-<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="new_cell∈CELL" org.eventb.core.source="/zoo/zoo_machine.bum|org.eventb.core.machineFile#zoo_machine|org.eventb.core.event#_SSSNYCxEEeeFnttsbmd41A|org.eventb.core.guard#_SSSNZCxEEeeFnttsbmd41A"/>
-</org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTHYPzoo_contex})" org.eventb.core.parentSet="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#EVTHYPzoo_contex}(" org.eventb.core.poStamp="30">
-<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="new_cell≠location(spec)" org.eventb.core.source="/zoo/zoo_machine.bum|org.eventb.core.machineFile#zoo_machine|org.eventb.core.event#_SSSNYCxEEeeFnttsbmd41A|org.eventb.core.guard#_SSS0cCxEEeeFnttsbmd41A"/>
-</org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTHYPzoo_contex}*" org.eventb.core.parentSet="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#EVTHYPzoo_contex})" org.eventb.core.poStamp="30">
-<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="cell_size(new_cell)&lt;cell_capacity(new_cell)" org.eventb.core.source="/zoo/zoo_machine.bum|org.eventb.core.machineFile#zoo_machine|org.eventb.core.event#_SSSNYCxEEeeFnttsbmd41A|org.eventb.core.guard#_SSS0cSxEEeeFnttsbmd41A"/>
-</org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPzoo_contex}" org.eventb.core.parentSet="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#EVTHYPzoo_contex}*" org.eventb.core.poStamp="30">
-<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="∀spe⦂ANIMAL·spe∈species∧location(spe)=new_cell⇒type(spe)=type(spec)" org.eventb.core.source="/zoo/zoo_machine.bum|org.eventb.core.machineFile#zoo_machine|org.eventb.core.event#_SSSNYCxEEeeFnttsbmd41A|org.eventb.core.guard#_SSS0cixEEeeFnttsbmd41A"/>
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poPredicateSet name="HYPzoo_contexx" org.eventb.core.parentSet="/zoo/zoo_machine.bpo|org.eventb.core.poFile#zoo_machine|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="30">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="species⊆ANIMAL" org.eventb.core.source="/zoo/zoo_machine.bum|org.eventb.core.machineFile#zoo_machine|org.eventb.core.invariant#_gsYgcCw5EeeFnttsbmd41A"/>
